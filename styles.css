@@ -1,0 +1,114 @@
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    /* Navbar */
+    nav {
+      background: #0d47a1;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    /* Main container */
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    .upload-section {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    input[type="file"] {
+      margin: 1rem 0;
+    }
+    video, canvas {
+      width: 300px;
+      border-radius: 10px;
+      margin: 1rem 0;
+    }
+    button {
+      padding: 10px 20px;
+      background: #0d47a1;
+      border: none;
+      color: #fff;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1565c0;
+    }
+
+    /* Detection Results */
+    .results {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .result-box {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .result-box h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+    .items-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 1rem;
+    }
+    .item-card {
+      text-align: center;
+      background: #f9f9f9;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .item-card img {
+      max-width: 100%;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .safe {
+      border: 2px solid #2e7d32;
+    }
+    .unsafe {
+      border: 2px solid #c62828;
+    }
+
+    /* Footer */
+    footer {
+      background: #0d47a1;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+      margin-top: 2rem;
+    }

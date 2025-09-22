@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Safety Object Detection Dashboard</title>
+  
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>Safety Object Detection</h1>
+    <ul>
+      <li>Home</li>
+      <li>Upload</li>
+      <li>Camera</li>
+      <li>About</li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    
+    <!-- Upload Section -->
+    <div class="upload-section">
+      <h2>Upload an Image</h2>
+      <input type="file" id="fileInput" accept="image/*"><br>
+      <button onclick="uploadFile()">Upload</button>
+
+      <h2>Or Use Camera</h2>
+      <video id="camera" autoplay playsinline></video><br>
+      <button onclick="capturePhoto()">Capture</button>
+      <canvas id="snapshot"></canvas>
+    </div>
+
+    <!-- Results Section -->
+    <div class="results">
+      <div class="result-box">
+        <h2>✅ Safety Items</h2>
+        <div class="items-grid" id="safeItems"></div>
+      </div>
+      <div class="result-box">
+        <h2>❌ Not Safe Items</h2>
+        <div class="items-grid" id="unsafeItems"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Safety Object Detection Dashboard | Designed with ❤</p>
+  </footer>
+<script src="script.js"></script>
+
+</body>
+</html>
+ 
